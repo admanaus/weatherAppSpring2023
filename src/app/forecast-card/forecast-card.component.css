@@ -12,3 +12,8 @@
     padding-top: 30px;
     justify-content: center;
   }
+
+  .loadingDiv {
+    display: flex;
+    justify-content: center;
+  }

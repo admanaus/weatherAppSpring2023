@@ -13,6 +13,8 @@ import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { ForecastCardComponent } from './forecast-card/forecast-card.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonModule,
     HttpClientModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
