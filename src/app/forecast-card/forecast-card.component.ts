@@ -11,6 +11,7 @@ export class ForecastCardComponent {
   constructor(private weatherApiService: WeatherApiService){}
   weatherResponse: string | undefined;
   locationString = '';
+  
 
   getWeather(location: string){
     this.weatherApiService.getWeatherByLocation(location)
