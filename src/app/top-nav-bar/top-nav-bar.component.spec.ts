@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserInputComponent } from './user-input.component';
+import { TopNavBarComponent } from './top-nav-bar.component';
 
-describe('UserInputComponent', () => {
-  let component: UserInputComponent;
-  let fixture: ComponentFixture<UserInputComponent>;
+describe('TopNavBarComponent', () => {
+  let component: TopNavBarComponent;
+  let fixture: ComponentFixture<TopNavBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserInputComponent ]
+      declarations: [ TopNavBarComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(UserInputComponent);
+    fixture = TestBed.createComponent(TopNavBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

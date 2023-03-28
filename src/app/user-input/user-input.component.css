@@ -1,9 +1,0 @@
-.example-form-field {
-    width: 250px;
-  }
-
-  .container { /* or inline-flex */
-    display: flex;
-    padding-top: 30px;
-    justify-content: center;
-  }

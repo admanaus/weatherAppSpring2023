@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
-import { UserInputComponent } from './user-input/user-input.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { ForecastCardComponent } from './forecast-card/forecast-card.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserInputComponent
+    TopNavBarComponent,
+    ForecastCardComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     FormsModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
