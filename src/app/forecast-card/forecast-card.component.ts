@@ -8,12 +8,15 @@ import { WeatherApiService } from '../weather-api.service';
 })
 export class ForecastCardComponent {
 
-  constructor(private weatherApiService: WeatherApiService){}
+  constructor(
+    private weatherApiService: WeatherApiService){}
+
   weatherResponse: string | undefined;
   showLoading = false;
   locationString = '';
   weatherDesc = '';
   FeelsLikeF = '';
+  hourlyArray?: any[];
 
 
   getWeather(location: string){
@@ -22,9 +25,11 @@ export class ForecastCardComponent {
     .subscribe((res: any) => {
       this.showLoading = false;
       this.weatherResponse = res;
-      console.log(res);
+      // console.log(res);
       this.weatherDesc = res.current_condition[0].weatherDesc[0].value;
-      this.FeelsLikeF = res.current_condition[0].FeelsLikeF
+      this.FeelsLikeF = res.current_condition[0].FeelsLikeF;
+      this.hourlyArray = res.weather[0].hourly;
+      console.log("Hourly: ", this.hourlyArray );
     })
   }
 
